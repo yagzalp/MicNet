@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MicNet
+Name[tr]=MicNet
+Comment=Siber Guvenlik Araci
+Exec=bash /home/bulbul/Desktop/micnet/run.sh
+Icon=/home/bulbul/Desktop/micnet/icon.svg
+Terminal=false
+Categories=Utility;Network;Security;
