@@ -156,6 +156,6 @@ Bu proje [GPL-3.0](LICENSE) lisansı altında dağıtılmaktadır.
 <div align="center">
 
 Geliştirici: [@yagzalp](https://github.com/yagzalp)
-Readme Duzenleyici: [@yagzalp](https://github.com/yusufprompt-dev)
+Readme Duzenleyici: [@yusufprompt-dev](https://github.com/yusufprompt-dev)
 
 </div>
