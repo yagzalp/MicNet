@@ -1,0 +1,5 @@
+requests>=2.28
+dnspython>=2.3
+pyperclip>=1.8
+python-whois>=0.8
+scapy>=2.5
