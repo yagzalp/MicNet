@@ -1,9 +1,17 @@
 [Desktop Entry]
 Type=Application
+Version=1.0
 Name=MicNet
 Name[tr]=MicNet
-Comment=Siber Guvenlik Araci
+GenericName=Cyber Security Tool
+GenericName[tr]=Siber Güvenlik Aracı
+Comment=37 modüllü açık kaynak siber güvenlik aracı
+Comment[tr]=37 modüllü açık kaynak siber güvenlik aracı
 Exec=bash /home/bulbul/Desktop/micnet/run.sh
 Icon=/home/bulbul/Desktop/micnet/icon.svg
+Path=/home/bulbul/Desktop/micnet
 Terminal=false
+StartupNotify=true
+NoDisplay=false
 Categories=Utility;Network;Security;
+Keywords=security;pentest;network;wifi;osint;scanner;guvenlik;
