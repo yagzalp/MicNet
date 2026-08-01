@@ -84,6 +84,41 @@ python3 main.py
 
 > ⚠️ **WifiScanner**, **Deauth** ve **WifiKir** modülleri için ayrıca `aircrack-ng` ve monitor mod destekli bir WiFi adaptörü gerekir.
 
+### 🖥️ Masaüstü Kısayolu (Uygulama Menüsüne Ekleme)
+
+Kurulumdan sonra MicNet'i terminalsiz, çift tıklayarak açmak için:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+Bu script otomatik olarak:
+- `run.sh` dosyasını çalıştırılabilir yapar
+- `micnet.desktop` dosyasını mevcut kullanıcının **uygulama menüsüne** (`~/.local/share/applications`) kaydeder
+- Varsa **masaüstüne** de bir kısayol ekler
+- Yolları (`Exec`, `Icon`) bulunduğunuz dizine göre otomatik ayarlar — elle düzenlemenize gerek kalmaz
+
+Kurulumdan sonra:
+- Uygulama menüsünde **"MicNet"** araması yapabilir,
+- veya masaüstündeki simgeye çift tıklayabilirsiniz.
+
+> 💡 GNOME/Nautilus kullanıyorsanız masaüstü simgesine ilk çift tıklamada *"Güvenilir mi? / Trust and Launch"* uyarısı çıkabilir — bu normaldir, onaylamanız yeterli.
+
+<details>
+<summary>Manuel kurulum (script kullanmadan)</summary>
+
+```bash
+chmod +x run.sh
+mkdir -p ~/.local/share/applications
+cp micnet.desktop ~/.local/share/applications/
+# Exec= ve Icon= satırlarındaki yolları kendi kurulum dizininize göre düzenleyin
+nano ~/.local/share/applications/micnet.desktop
+update-desktop-database ~/.local/share/applications/
+```
+
+</details>
+
 ---
 
 ## 🧩 Modüller
@@ -156,6 +191,5 @@ Bu proje [GPL-3.0](LICENSE) lisansı altında dağıtılmaktadır.
 <div align="center">
 
 Geliştirici: [@yagzalp](https://github.com/yagzalp)
-Readme Duzenleyici: [@yusufprompt-dev](https://github.com/yusufprompt-dev)
 
 </div>
