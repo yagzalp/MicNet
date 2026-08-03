@@ -459,6 +459,7 @@ class DeviceScannerTab(Gtk.Box):
             return
         dialog = Gtk.FileChooserDialog(
             title="Cihaz Listesini Kaydet",
+            transient_for=self.get_toplevel(),
             action=Gtk.FileChooserAction.SAVE,
             buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
                      Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT),

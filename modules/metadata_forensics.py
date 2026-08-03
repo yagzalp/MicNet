@@ -70,6 +70,7 @@ class MetadataTab(Gtk.Box):
     def browse(self):
         dialog = Gtk.FileChooserDialog(
             title="Dosya Sec",
+            transient_for=self.get_toplevel(),
             action=Gtk.FileChooserAction.OPEN,
             buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT),
         )

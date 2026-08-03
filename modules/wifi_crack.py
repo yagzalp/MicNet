@@ -159,13 +159,15 @@ class WifiCrackTab(Gtk.Box):
         self.textbuffer.insert(end, text + "\n")
 
     def browse_cap(self):
-        d = Gtk.FileChooserDialog(title=".cap Dosyasi", parent=None,
+        d = Gtk.FileChooserDialog(title=".cap Dosyasi", transient_for=self.get_toplevel(),
             action=Gtk.FileChooserAction.OPEN,
             buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT))
-        f = Gtk.FileFilter(name="Capture (*.cap)")
+        f = Gtk.FileFilter()
+        f.set_name("Capture (*.cap)")
         f.add_pattern("*.cap")
         d.add_filter(f)
-        f2 = Gtk.FileFilter(name="Tum dosyalar")
+        f2 = Gtk.FileFilter()
+        f2.set_name("Tum dosyalar")
         f2.add_pattern("*")
         d.add_filter(f2)
         if d.run() == Gtk.ResponseType.ACCEPT:
@@ -173,7 +175,7 @@ class WifiCrackTab(Gtk.Box):
         d.destroy()
 
     def browse_wordlist(self):
-        d = Gtk.FileChooserDialog(title="Sozluk Dosyasi", parent=None,
+        d = Gtk.FileChooserDialog(title="Sozluk Dosyasi", transient_for=self.get_toplevel(),
             action=Gtk.FileChooserAction.OPEN,
             buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT))
         if d.run() == Gtk.ResponseType.ACCEPT:
@@ -318,7 +320,7 @@ class WifiCrackTab(Gtk.Box):
         GLib.idle_add(self.finish)
 
     def generate_wordlist(self):
-        d = Gtk.FileChooserDialog(title="Sozlugu Kaydet", parent=None,
+        d = Gtk.FileChooserDialog(title="Sozlugu Kaydet", transient_for=self.get_toplevel(),
             action=Gtk.FileChooserAction.SAVE,
             buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT))
         d.set_current_name("sozluk.txt")
