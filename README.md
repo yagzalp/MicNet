@@ -18,7 +18,7 @@ Ağ keşfi ve port tarama · WiFi analizi · OSINT · Web güvenlik testleri · 
 <img src="https://img.shields.io/badge/platform-Linux-2f2f2f?logo=linux&logoColor=white" alt="Platform">
 <img src="https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/GUI-GTK3-e01b24?logo=gtk&logoColor=white" alt="GTK3">
-<img src="https://img.shields.io/badge/kurulum-tek%20t%C4%B1k%20AppImage-orange" alt="AppImage">
+<img src="https://img.shields.io/badge/appimage indir%20t%C4%B1k%20AppImage-orange" alt="AppImage">
 </p>
 
 <p>
