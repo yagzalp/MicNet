@@ -718,7 +718,7 @@ class MicNetApp:
             Gtk.Image.new_from_icon_name("security-high-symbolic", Gtk.IconSize.MENU),
             False, False, 4
         )
-        statusbar.pack_start(Gtk.Label(label="MicNet v2.0"), False, False, 0)
+        statusbar.pack_start(Gtk.Label(label="MicNet v3.0"), False, False, 0)
 
         statusbar.pack_end(Gtk.Label(label=f"{datetime.now().strftime('%H:%M')}"), False, False, 0)
 
